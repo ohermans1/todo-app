@@ -1,0 +1,39 @@
+.add-task {
+  position: relative;
+  font-size: 1.8rem;
+
+  &__input {
+    color: hsl(235, 19%, 35%);
+    font-size: inherit;
+    width: 100%;
+    padding: 2.5rem;
+    padding-left: 6rem;
+    border-radius: 0.5rem;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  &__button {
+    appearance: none;
+    position: absolute;
+    top: 2.2rem;
+    left: 2.4rem;
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 50%;
+    border: 1px solid hsl(236, 33%, 92%);
+    cursor: pointer;
+    font-size: 2rem;
+    transition: all 0.2s;
+
+    &:active {
+      background-color: rgb(34, 228, 34);
+    }
+
+    &:hover {
+      border: 1px solid hsl(233, 11%, 84%);
+    }
+  }
+}

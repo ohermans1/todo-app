@@ -1,0 +1,45 @@
+.task-item {
+  position: relative;
+  font-size: 1.8rem;
+  width: 100%;
+  padding: 2.5rem;
+  padding-left: 6rem;
+  background-color: hsl(0, 0%, 98%);
+  list-style: none;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid hsl(233, 11%, 84%);
+  }
+
+  &__text {
+    color: hsl(235, 19%, 35%);
+    font-size: inherit;
+  }
+
+  &__checkbox {
+    appearance: none;
+    position: absolute;
+    top: 2.2rem;
+    left: 2.4rem;
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 50%;
+    border: 1px solid hsl(236, 33%, 92%);
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid hsl(233, 11%, 84%);
+    }
+  }
+}
+
+.checked {
+  color: hsl(233, 11%, 84%);
+  text-decoration: line-through;
+
+  &--button {
+    background-image: url("../../../public/images/icon-check.svg"), linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

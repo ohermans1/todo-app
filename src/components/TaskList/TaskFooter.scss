@@ -1,0 +1,52 @@
+.task-footer {
+  width: 100%;
+  padding: 2.5rem;
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(236, 9%, 61%);
+
+  @media screen and (max-width: 750px) {
+    flex-wrap: wrap;
+  }
+
+  &__total-tasks {
+    font-size: 1.2rem;
+  }
+
+  &__button-group {
+    display: flex;
+    gap: 1rem;
+
+    @media screen and (max-width: 750px) {
+      width: 100%;
+      order: 3;
+      margin-top: 4rem;
+      justify-content: center;
+      gap: 3rem;
+    }
+  }
+
+  &__button {
+    font-size: 1.3rem;
+    border: none;
+    padding: none;
+    background-color: transparent;
+    font-weight: 700;
+    color: currentColor;
+    cursor: pointer;
+
+    @media screen and (max-width: 750px) {
+      font-size: 1.8rem;
+    }
+
+    &--clear {
+      font-weight: 400;
+    }
+
+    &:hover {
+      color: hsl(235, 19%, 35%);
+    }
+  }
+}
